@@ -1,0 +1,365 @@
+.form
+  width: 1200px
+  height: 500px
+  margin: 0px auto
+
+.first-form
+  background: url('/images/intro_bg.jpg') no-repeat
+  background-size: 100%
+
+
+.black-opacity-background
+  background: rgba(0,0,0,0.7)
+  padding: 10px 15px
+
+.title
+  padding-top: 110px
+  text-align: center
+
+.button
+  width: 240px
+  height: 40px
+  line-height: 40px
+  text-align: center
+  color: #fff
+  background: #e74c3c
+  box-shadow: 0px 5px 0 #c0392b
+  //border: 1px solid #ae2f10
+  color: #fff
+  border-radius: 4px
+  font-family: 'ProximaNovaCond-Bold'
+  cursor: pointer
+  &:hover
+    background: #cb3610
+
+
+  &.centered
+    margin: 0px auto
+
+
+.white
+  color: #fff
+
+
+.offer-row
+  background: #2c3e50
+  width: 100%
+  padding: 25px 0
+  text-align: center
+
+.form-row
+  background: #ecf0f1
+  width: 100%
+  padding: 25px 0
+
+
+.white-background
+  width: 100%
+  background: #fff
+  padding: 25px 0
+
+input
+  width: 300px
+  height: 42px
+  padding-top: 12px
+  padding: 0 15px
+  border: 2px solid #d4dde1
+  border-radius: 6px
+  font-size: 16px
+  margin-right: 40px
+
+
+button
+  width: 250px
+  height: 39px
+  line-height: 38px
+  text-align: center
+  font-size: 16px
+  border: none
+  border-radius: 6px
+  background: #e74c3c
+  box-shadow: 0px 5px 0 #c0392b
+  color: #fff
+  cursor: pointer
+  &:hover
+    background: #cb3610
+
+
+.blocks
+  margin-top: 60px
+
+  &:after
+    clear: both
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+
+  .block
+    float: left
+    width: 170px
+    height: 170px
+    //border-radius: 170px
+    //background: #fafafa
+    margin-right: 25px
+    text-align: center
+    color: #3a4e5c
+
+    &.last
+      margin-right: 0px
+
+
+    .icon
+      width: 32px
+      height: 32px
+      margin: 0px auto
+      background: url('/images/icons/ok_icon.png') no-repeat
+
+
+    &.last
+      margin-right: 0px
+
+
+    .name
+      padding: 15px 0
+      font-size: 26px
+      font-weight: 200
+
+    .text
+      padding: 20px 0
+      font-size: 16px
+      text-align: center
+      line-height: 1.4
+
+
+.line
+  width: 960px
+  height: 30px
+  margin-top: 50px
+  margin-bottom: 30px
+  background: url('/images/line.png') no-repeat
+
+
+.works
+  .work
+    width: 100%
+    height: 300px
+    position: relative
+    //border-bottom: 1px solid #bdc3c7
+
+    &.last
+      border-bottom: none
+      padding-bottom: 0px
+      margin-bottom: 0px
+
+    &.even
+
+      .slides
+        position: absolute
+        top: 0px
+        left: 460px
+
+      .content
+        margin-left: 0px
+
+    .slides
+      width: 500px
+      height: 300px
+      position: absolute
+      top: 0px
+      left: 0px
+
+      .slides-block
+        position: relative
+
+
+        .slide-next
+          z-index: 999
+          width: 30px
+          height: 30px
+          background: url('/images/direction_nav.png') no-repeat 0 0
+          background-position: -30px 0
+          position: absolute
+          top: 45%
+          right: 0px
+          cursor: pointer
+
+          &:hover
+            background-position: -30px -30px
+
+
+        .slide-prev
+          z-index: 999
+          width: 30px
+          height: 30px
+          background: url('/images/direction_nav.png') no-repeat 0 0
+          background-position: 0px 0
+          position: absolute
+          top: 45%
+          left: 0px
+          cursor: pointer
+
+          &:hover
+            background-position: 0px -30px
+
+
+        .slides-control
+          position: absolute
+          bottom: 25px
+          left: 25px
+          list-style: none
+          li
+            float: left
+            margin-left: 5px
+            width: 13px !important
+            height: 13px !important
+
+            a
+              display: block
+              width: 13px !important
+              height: 13px !important
+              background: url('/images/bg_control_nav.png') no-repeat 0 0
+              text-indent: -9999
+
+              &.active
+                background-position: 0 -26px
+                cursor: default !important
+
+    .content
+      width: 440px
+      height: 300px
+      margin-left: 520px
+      position: relative
+
+      .name
+        font-size: 24px
+        font-family: 'ProximaNovaCond-Bold'
+        color: #2c3e50
+
+      .price
+        padding-top: 20px
+        font-size: 24px
+        font-weight: bold
+        color: #2c3e50
+
+
+      .about
+        margin-top: 10px
+        font-size: 14px
+        line-height: 1.4
+        color: #2c3e50
+
+
+.portfolio
+  .work
+    position: relative
+    width: 720px
+    height: 480px
+    margin: 0px auto
+    margin-bottom: 50px
+
+
+    .top
+      width: 720px
+      height: 80px
+      background: #fafafa
+      border: 1px solid #eee
+
+    .desc
+      position: absolute
+      bottom: 20px
+      left: 120px
+      background: rgba(0,0,0, 0.7)
+      color: #fff
+      font-size: 16px
+      text-align: center
+      width: 480px
+      padding: 25px 0
+      text-align: center
+      z-index: 9999
+      line-height: 1.4
+
+    .slider
+      width: 720px
+      height: 480px
+      margin: 0px auto
+      position: relative
+      border: 1px solid #ccc
+
+      .slide-next
+        z-index: 999
+        width: 30px
+        height: 30px
+        background: url('/images/direction_nav.png') no-repeat 0 0
+        background-position: -30px 0
+        position: absolute
+        top: 45%
+        right: 0px
+        cursor: pointer
+
+        &:hover
+          background-position: -30px -30px
+
+
+      .slide-prev
+        z-index: 999
+        width: 30px
+        height: 30px
+        background: url('/images/direction_nav.png') no-repeat 0 0
+        background-position: 0px 0
+        position: absolute
+        top: 45%
+        left: 0px
+        cursor: pointer
+
+        &:hover
+          background-position: 0px -30px
+
+
+.reviews
+  margin-top: 75px
+  &:after
+    clear: both
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+.review-block
+  float: left
+  width: 440px
+  margin-right: 80px
+  position: relative
+  min-height: 120px
+  margin-bottom: 40px
+
+  &:nth-child(2n)
+    margin-right: 0px
+
+  .avatar
+    position: absolute
+    top: 0px
+    left: 0px
+    width: 50px
+    height: 50px
+    background: #666
+
+    img
+      width: 50px
+      height: 50px
+      border: 1px solid #ddd
+
+  .content
+    margin-left: 75px
+
+    .name
+      font-size: 18px
+      font-family: 'ProximaNovaCond-Bold'
+      margin-bottom: 15px
+
+    .text
+      font-size: 14px
+      line-height: 1.5
