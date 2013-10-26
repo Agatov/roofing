@@ -9,10 +9,6 @@
           Работаем с 9:00 до 21:00
 
 
-    -#.button.centered{style: 'margin-top: 75px;'}
-      Заказать звонок
-
-
 %section
   .offer-row
     .wrapper
@@ -22,9 +18,9 @@
           Оставьте заявку и мы бесплатно вышлем вам специалиста для замера и рассчета стоимости.
   .form-row
     .wrapper
-      %input{type: :text, placeholder: 'Введите ваше имя'}
-      %input{type: :text, placeholder: 'Введите ваше номер телефона'}
-      %button
+      %input{type: :text, name: :username, placeholder: 'Введите ваше имя'}
+      %input{type: :text, name: :phone, placeholder: 'Введите ваше номер телефона'}
+      %button.send-order{goal: 'order1'}
         Отправить заявку
 
 
@@ -211,9 +207,9 @@
           Оставьте заявку и наш специалист подробно вас проконсультирует.
   .form-row
     .wrapper
-      %input{type: :text, placeholder: 'Введите ваше имя'}
-      %input{type: :text, placeholder: 'Введите ваше номер телефона'}
-      %button
+      %input{type: :text, name: :username, placeholder: 'Введите ваше имя'}
+      %input{type: :text, name: :phone, placeholder: 'Введите ваше номер телефона'}
+      %button.send-order{goal: 'order2'}
         Отправить заявку
 
 
@@ -360,9 +356,9 @@
           Оставьте заявку и мы расскажем вам об этом.
   .form-row
     .wrapper
-      %input{type: :text, placeholder: 'Введите ваше имя'}
-      %input{type: :text, placeholder: 'Введите ваше номер телефона'}
-      %button
+      %input{type: :text, name: :username, placeholder: 'Введите ваше имя'}
+      %input{type: :text, name: :phone, placeholder: 'Введите ваше номер телефона'}
+      %button.send-order{goal: 'order3'}
         Отправить заявку
 
 %section

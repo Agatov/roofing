@@ -11,8 +11,6 @@ $ ->
     show_order_form()
     false
 
-
-
   $('.send-order').bind 'click', ->
     name = $(@).parent().find('input[name=username]')
     if name.val().length < 2
@@ -29,6 +27,7 @@ $ ->
     $('.modal-overlay').bind 'click', ->
       hide_thank_you()
 
+    reachGoal 'order'
     reachGoal $(@).attr('goal')
 
     if $(@).hasClass 'inline-form'
@@ -105,4 +104,4 @@ window.hide_thank_you = ->
 
 
 window.reachGoal = (goal) ->
-  #yaCounter22645732.reachGoal goal
+  yaCounter22701544.reachGoal goal
